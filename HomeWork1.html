@@ -1,8 +1,24 @@
 <!DOCTYPE html>
 
 <html>
-<head><meta charset="utf-8"><title>HomeWork 1 Html CCS</title><meta name="description" content="Summary of the content of the page with nice keywords"><link rel="stylesheet" href="main.css"></head>
-<body><div><h1>Simple HTML & CCS Page</h1><br />My Name is Louie Qura this is my second semester at csm. I graduated from burlingame high school, class of 2020. I am a very active person and enjoy playing compettive sports. I played varsity soccer in highschool. I enjoy spending time with family and friends but I also like to spend time alone. I don not have much experience in computer science but hopfully by the end of the semester I will be great at it.<br /> <img src="picture2.jpeg" />I am attending this class because I want to gain experience and learn about web design and possibly later in the future have a carrer in it. </div>
+<head><meta charset="utf-8"><title>HomeWork 1 Html CCS</title>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script> 
+<script type="text/javascript">
+$(document).ready(function(){
+$("#start").click(function(){ 
+$("h1").animate({fontSize: "50px"})  
+$("img").css("border-style","solid")
+$("h1").css ("color","red")
+$("h1").animate({fontSize: "30px"})
+
+});  });
+
+</script>  
+            
+
+<meta name="description" content="Summary of the content of the page with nice keywords"><link rel="stylesheet" href="main.css"></head>
+<body><div><h1>Simple HTML & CCS Page</h1><br />My Name is Louie Qura this is my second semester at csm. I graduated from burlingame high school, class of 2020. I am a very active person and enjoy playing compettive sports. I played varsity soccer in highschool. I enjoy spending time with family and friends but I also like to spend time alone. I don not have much experience in computer science but hopfully by the end of the semester I will be great at it.<br /> <img src="picture2.jpeg" alt="my picture"
+width="150" height="197" />I am attending this class because I want to gain experience and learn about web design and possibly later in the future have a carrer in it. </div>
 <div> <h2>Technologies for this class</h2> 
 <ul>
 		<li>HTML </li>
@@ -18,5 +34,6 @@
 		
 	</ul>
 </div>
+<button type="button"id="start" >Start Animation!</button>
 </body>
 </html>
